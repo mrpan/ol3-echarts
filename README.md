@@ -14,9 +14,7 @@ echarts ol3 地图扩展
         });
 	    var container = ol3Ext.getEchartsContainer();
 	    var option={
-	    	。。。。
-		    。。。。
-		    。。。
+	    	........
 
 		}
 	    
