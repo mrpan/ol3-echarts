@@ -25,7 +25,9 @@ var option={
 if (myChart && myChart.dispose) {
 	myChart.dispose();
 }
+```
 保证地图加载完成
+```js
 setTimeout(function(){
 	myChart = ol3Ext.initECharts(container, curTheme);
 	window.onresize = myChart.resize;
