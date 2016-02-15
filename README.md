@@ -4,7 +4,8 @@ echarts ol3 地图扩展
 =================
 
 举例：
-> 初始化地图
+初始化地图
+```js
 >	var ol3Ext = new OL3Extension(ol, echarts,{
 >	    layers: [raster],
 >		target: 'newmap',
@@ -24,7 +25,7 @@ var option={
 if (myChart && myChart.dispose) {
 	myChart.dispose();
 }
-//保证地图加载完成
+保证地图加载完成
 setTimeout(function(){
 	myChart = ol3Ext.initECharts(container, curTheme);
 	window.onresize = myChart.resize;
@@ -32,4 +33,4 @@ setTimeout(function(){
 	
 }, 1000); 
 
-
+```
