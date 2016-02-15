@@ -6,14 +6,14 @@ echarts ol3 地图扩展
 举例：
 初始化地图
 ```js
->	var ol3Ext = new OL3Extension(ol, echarts,{
->	    layers: [raster],
->		target: 'newmap',
->		view: new ol.View({
->			center: ol.proj.transform([104.067923,30.679943], 'EPSG:4326', 'EPSG:3857'),
->			zoom: 5
->		})
->	});
+var ol3Ext = new OL3Extension(ol, echarts,{
+    layers: [raster],
+	target: 'newmap',
+	view: new ol.View({
+		center: ol.proj.transform([104.067923,30.679943], 'EPSG:4326', 'EPSG:3857'),
+		zoom: 5
+	})
+});
 
 var container = ol3Ext.getEchartsContainer();
 var option={
